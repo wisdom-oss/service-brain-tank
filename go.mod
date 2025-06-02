@@ -2,10 +2,9 @@ module microservice
 
 go 1.24.2
 
-
 require (
 	github.com/dr4hcu5-jan/viper-vault v0.1.0
-	github.com/getkin/kin-openapi v0.131.0
+	github.com/getkin/kin-openapi v0.132.0
 	github.com/gin-contrib/requestid v1.0.5
 	github.com/gin-gonic/gin v1.10.0
 	github.com/hashicorp/vault/api v1.16.0
@@ -16,7 +15,6 @@ require (
 	github.com/stretchr/testify v1.10.0
 	github.com/wisdom-oss/common-go/v3 v3.2.1
 	openapi.tanna.dev/go/validator v0.4.0
-
 )
 
 require (
