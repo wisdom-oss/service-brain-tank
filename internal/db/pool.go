@@ -6,7 +6,10 @@ import (
 	"fmt"
 	"log/slog"
 
+	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
+
+	pgxgeom "github.com/twpayne/pgx-geom"
 
 	"microservice/internal/configuration"
 )
@@ -67,6 +70,13 @@ func Connect() (err error) {
 	pgConfig, err := pgxpool.ParseConfig(connectionString)
 	if err != nil {
 		return fmt.Errorf("unable to parse database configuration string: %w", err)
+	}
+
+	pgConfig.AfterConnect = func(ctx context.Context, conn *pgx.Conn) error {
+		if err := pgxgeom.Register(ctx, conn); err != nil {
+			return err
+		}
+		return nil
 	}
 
 	slog.Debug("initializing database pool with connection string", "connString", connectionString)
