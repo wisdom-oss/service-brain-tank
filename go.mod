@@ -2,7 +2,6 @@ module microservice
 
 go 1.24.2
 
-
 require (
 	github.com/dr4hcu5-jan/viper-vault v0.1.0
 	github.com/getkin/kin-openapi v0.131.0
@@ -16,7 +15,6 @@ require (
 	github.com/stretchr/testify v1.10.0
 	github.com/wisdom-oss/common-go/v3 v3.2.1
 	openapi.tanna.dev/go/validator v0.4.0
-
 )
 
 require (
@@ -24,7 +22,7 @@ require (
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/fsnotify/fsnotify v1.9.0 // indirect
 	github.com/go-jose/go-jose/v4 v4.1.0 // indirect
-	github.com/go-viper/mapstructure/v2 v2.2.1 // indirect
+	github.com/go-viper/mapstructure/v2 v2.3.0 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-cleanhttp v0.5.2 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
