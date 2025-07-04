@@ -1,18 +1,16 @@
 openapi: 3.0.3
 info:
-  # TODO: Change Information
-  title: Microservice Template
-  description: Microservice Template
+  title: Microservice BrainTank
+  description: Microservice BrainTank
   version: 1.0.0
 servers:
-  - url: '/api/xzy' # TODO: Replace xyz with actual deployment path
+  - url: '/api/brain-tank'
     description: WISdoM
 
   - url: 'http://localhost:8000'
     description: Development
 
 components:
-  # TODO: Remove if service won't handle private data
   securitySchemes:
     WISdoM:
       description: |
@@ -21,14 +19,13 @@ components:
       openIdConnectUrl: /api/auth/.well-known/openid-configuration
 
 paths:
-  /v1/:
-    get:
-      responses:
-        200:
-          description: Hello There response
-          content:
-            text/plain:
-              schema:
-                type: string
-                pattern: '^hello there$'
+  /v1/insert:
+     post:
+        responses:
+          201:
+            description: Insert response
+            content:
+              text/plain:
+                schema:
+                  type: string
   
