@@ -19,14 +19,13 @@ components:
       openIdConnectUrl: /api/auth/.well-known/openid-configuration
 
 paths:
-  /v1/:
-    get:
-      responses:
-        200:
-          description: Hello There response
-          content:
-            text/plain:
-              schema:
-                type: string
-                pattern: '^hello there$'
+  /v1/insert:
+     post:
+        responses:
+          201:
+            description: Insert response
+            content:
+              text/plain:
+                schema:
+                  type: string
   

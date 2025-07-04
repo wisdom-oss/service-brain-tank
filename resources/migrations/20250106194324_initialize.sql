@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS
    brain_tank.measurement (
        mac_address macaddr references brain_tank.tank(mac_address),
        measurement_time timestamp without time zone,
-       waterlevel double precision,
+       water_level double precision,
        draining double precision,
        draining_time timestamp without time zone,
        PRIMARY KEY(mac_address, measurement_time)

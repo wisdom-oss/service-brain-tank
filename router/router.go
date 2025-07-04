@@ -21,7 +21,6 @@ func Configure() (*gin.Engine, error) {
 
 	v1 := r.Group("/v1")
 	{
-		v1.GET("/", v1Routes.BasicHandler)
 		v1.POST("/insert", v1Routes.Insert)
 	}
 
