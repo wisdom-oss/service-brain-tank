@@ -14,7 +14,8 @@ CREATE TABLE IF NOT EXISTS
        mac_address macaddr references brain_tank.tank(mac_address),
        measurement_time timestamp without time zone,
        water_level double precision,
-       draining double precision,
+       rain_forecast double precision,
+       draining boolean,
        draining_time timestamp without time zone,
        PRIMARY KEY(mac_address, measurement_time)
    );

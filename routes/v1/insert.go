@@ -91,7 +91,7 @@ func Insert(c *gin.Context) {
 	var measurement types.Measurement
 
 	err = pgxscan.Get(c, db.Pool(), &measurement, query, parameters.MacAddress, parameters.MeasurementTime,
-		parameters.WaterLevel, parameters.Draining, parameters.DrainingTime)
+		parameters.WaterLevel, parameters.RainForecast, parameters.Draining, parameters.DrainingTime)
 	if err != nil {
 		c.Abort()
 		_ = c.Error(err)

@@ -18,7 +18,7 @@ RETURNING *;
 
 -- name: insert-measurement
 INSERT INTO
-   brain_tank.measurement(mac_address, measurement_time, water_level, draining, draining_time)
+   brain_tank.measurement(mac_address, measurement_time, water_level, rain_forecast, draining, draining_time)
 VALUES 
-   ($1, $2, $3, $4, $5)
+   ($1, $2, $3, $4, $5, $6)
 RETURNING *; 
