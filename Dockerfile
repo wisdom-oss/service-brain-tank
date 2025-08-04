@@ -11,8 +11,8 @@ FROM scratch
 
 LABEL traefik.enable=true
 LABEL traefik.http.routers.template-service.middlewares=brain-tank-service
-LABEL traefik.http.routers.template-service.rule="PathPrefix(`/api/brain-tank-service`)"
-LABEL traefik.http.middlewares.template-service.stripprefix.prefixes="/api/brain-tank-service"
+LABEL traefik.http.routers.template-service.rule="PathPrefix(`/api/brain-tank`)"
+LABEL traefik.http.middlewares.template-service.stripprefix.prefixes="/api/brain-tank"
 
 ENV GIN_MODE=release
 
