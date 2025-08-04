@@ -21,6 +21,13 @@ components:
 paths:
   /v1/insert:
      post:
+        requestBody:
+           description: Brain Tank Measurement
+           required: true
+           content:
+             application/json:
+                schema:
+                  $ref: "types/v1/parameter.go"
         responses:
           201:
             description: Insert response
