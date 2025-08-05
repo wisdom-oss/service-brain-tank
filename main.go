@@ -40,6 +40,12 @@ func main() {
 		os.Exit(1)
 	}
 
+	err = db.LoadQueries()
+	if err != nil {
+		slog.Error("unable to load database queries", "error", err)
+		os.Exit(1)
+	}
+
 	// running database migrations stored in resources/migrations
 	err = db.MigrateDatabase()
 	if err != nil {
