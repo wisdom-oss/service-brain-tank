@@ -9,11 +9,10 @@ require (
 	github.com/gin-gonic/gin v1.10.0
 	github.com/hashicorp/vault/api v1.16.0
 	github.com/hashicorp/vault/api/auth/userpass v0.9.0
-	github.com/jackc/pgx/v5 v5.7.4
+	github.com/jackc/pgx/v5 v5.7.5
 	github.com/qustavo/dotsql v1.2.0
 	github.com/twpayne/pgx-geom v0.0.2
 	github.com/wisdom-oss/common-go/v3 v3.2.1
-
 )
 
 require (
