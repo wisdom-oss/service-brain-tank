@@ -201,8 +201,8 @@ github.com/twitchyliquid64/golang-asm v0.15.1 h1:SU5vSMR7hnwNxj24w34ZyCi/FmDZTkS
 github.com/twitchyliquid64/golang-asm v0.15.1/go.mod h1:a1lVb/DtPvCB8fslRZhAngC2+aY1QWCk3Cedj/Gdt08=
 github.com/twpayne/go-geom v1.6.1 h1:iLE+Opv0Ihm/ABIcvQFGIiFBXd76oBIar9drAwHFhR4=
 github.com/twpayne/go-geom v1.6.1/go.mod h1:Kr+Nly6BswFsKM5sd31YaoWS5PeDDH2NftJTK7Gd028=
-github.com/twpayne/pgx-geom v0.0.2 h1:DZcp66JfCwyfQMH1JNBa0vfF+/hi4WQsfHMqBRXp8WI=
-github.com/twpayne/pgx-geom v0.0.2/go.mod h1:rUjv/MgeOmPZqUbLY7Qgq56dAAHE28S7FZMFtXQMRoI=
+github.com/twpayne/pgx-geom v1.0.0 h1:6G4KAY8eJctjXhvGck73S7HnKayly7ZyQcmG8TC1CDU=
+github.com/twpayne/pgx-geom v1.0.0/go.mod h1:d+aJjVsx0FSBzl9DnFfJyMd0IZs6GzGwpSir5vLtWXU=
 github.com/ugorji/go/codec v1.2.12 h1:9LC83zGrHhuUA9l16C9AHXAqEV/2wBQ4nkvumAE65EE=
 github.com/ugorji/go/codec v1.2.12/go.mod h1:UNopzCgEMSXjBc6AOMqYvWC1ktqTAfzJZUZgYf6w6lg=
 github.com/wisdom-oss/common-go/v3 v3.2.1 h1:qJO60cikBaXFnZ0oSH+PDa5+iuK2Zu2KCkLSik9VLwc=
